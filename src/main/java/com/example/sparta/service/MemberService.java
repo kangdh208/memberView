@@ -17,7 +17,7 @@ public class MemberService {
 
     public MemberResponseDto findMember(Long id) {
         Member member = memberRepository.findById(id).orElseThrow(
-                () -> new NullPointerException("NO SUCH MEMBER!")
+                () -> new NullPointerException("회원 상세 조회 실패")
         );
         return new MemberResponseDto(member);
     }

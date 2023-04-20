@@ -18,13 +18,13 @@ public class Member {
     private Long id;
     private String name;
     private String email;
-    private String password;
+    private String pw;
 
     public Member(MemberRequestDto memberRequestDto) {
         this.id = memberRequestDto.getId();
         this.name = memberRequestDto.getName();
         this.email = memberRequestDto.getEmail();
-        this.password = memberRequestDto.getPassword();
+        this.pw = memberRequestDto.getPw();
 
     }
 }
